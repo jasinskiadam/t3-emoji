@@ -9,7 +9,8 @@ const MyApp: AppType = ({ Component, pageProps }) => {
   return (
     <ClerkProvider {...pageProps}>
       <Component {...pageProps} />
-    </ClerkProvider>);
+    </ClerkProvider>
+  );
 };
 
 export default api.withTRPC(MyApp);
